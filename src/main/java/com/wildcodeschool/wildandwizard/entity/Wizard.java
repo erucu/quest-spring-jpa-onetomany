@@ -15,15 +15,7 @@ public class Wizard {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String firstName;
-    public School getSchool() {
-		return school;
-	}
-
-	public void setSchool(School school) {
-		this.school = school;
-	}
-
+    private String firstName;    
 	private String lastName;
     private Date birthday;
     private String birthPlace;
@@ -92,4 +84,13 @@ public class Wizard {
     public void setMuggle(boolean muggle) {
         this.muggle = muggle;
     }
+    
+    public School getSchool() {
+		return school;
+	}
+
+	public void setSchool(School school) {
+		this.school = school;
+	}
+
 }
